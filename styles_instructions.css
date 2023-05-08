@@ -1,0 +1,51 @@
+/* Style for the body of the page */
+body {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: #333333;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  /* Style for the text container */
+  .text-container {
+    display: inline-block;
+    text-align: left;
+    width: 75%;
+    padding: 20px;
+    margin: auto;
+    line-height: 1.5;
+  }
+  
+  /* Style for the buttons container */
+  .buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  /* Style for the buttons */
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #333333;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+ /* Style for the image container */
+.image-container {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-image: url('Stanford_Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 20%;
+}

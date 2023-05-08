@@ -1,0 +1,151 @@
+/* Style for the body of the page */
+body {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  }
+  
+  /* Style for the text container */
+  .text-container {
+  margin-top: 40px; /* You can increase this value to move the instructions text down */
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 0;
+  }
+  
+  /* Style for the arrow container */
+  .arrow-container {
+  position: absolute; 
+  top: 30%; /* You can adjust this value to position the arrow equidistant from the instructions and the sorting area */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 25px;
+  }
+  
+  /* Style for the arrow line*/
+  .arrow-line{
+  position: absolute;
+  top: 12.5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  }
+  
+  /* Style for arrowhead on the left */
+  .arrow-container::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -12.5px;
+  transform: translateY(50%);
+  border-top: 12.5px solid transparent;
+  border-right: 25px solid white;
+  border-bottom: 12.5px solid transparent;
+  }
+  
+  /* Style for arrowhead on the right */
+  .arrow-container::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: -12.5px;
+  transform: translateY(50%);
+  border-top: 12.5px solid transparent;
+  border-left: 25px solid white;
+  border-bottom: 12.5px solid transparent;
+  }
+  
+/* Style for the arrow label on the left */
+.arrow-label-left {
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 90px;
+}
+
+/* Style for the arrow label on the right */
+.arrow-label-right {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  transform: translateX(50%);
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  width: 90px;
+}
+
+/* Style for the sorting area container */
+.sorting-area {
+  position: absolute;
+  background-color: white;
+  width: 60%; /* You can adjust this value to make the sorting area container wider or narrower */
+  height: 50%; /* You can adjust this value to make the sorting area container taller or shorter */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 60%; /* This value should be adjusted so that the sorting area is centered vertically with the arrow */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.word-box {
+  text-align: center;
+  margin-top: auto;
+  cursor: move ;
+  position: absolute;
+  width: 120px; /* you can adjust this value to make the word boxes bigger or smaller */
+  height: 25px; /* you can adjust this value to make the word boxes taller or shorter */
+  background-color: brown; /* you can change this value to any color you want */
+  border: 2px solid white; /* you can change this value to any color you want */
+  color: white; /* you can change this value to any color you want */
+  font-size: 20px;
+  padding: 10px; /* you can adjust this value to add more or less padding */
+}
+
+
+/* Style for the buttons container */
+.buttons-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Style for the buttons */
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: #333333;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Style for the image container */
+.image-container {
+position: fixed;
+bottom: 0px;
+left: 0px;
+background-image: url('Stanford_Logo.png');
+background-repeat: no-repeat;
+background-size: contain;
+width: 20%;
+height: 20%;
+}
